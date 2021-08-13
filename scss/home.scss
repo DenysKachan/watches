@@ -6,7 +6,11 @@
 
 .banner {
     width: 100%;
-    @extend %df-basic;
+
+    &__body {
+        width: 100%;
+        @extend %df-basic;
+    }
 
     &__article {
         width: 30%;
@@ -51,5 +55,86 @@
         width: 65%;
         margin-top: 30px;
         user-select: none;
+    }
+}
+
+.popular-models {
+    width: 100%;
+
+    &__body {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    &__headline {
+        font-size: 32px;
+        font-family: 'Playfair Display', sans-serif;
+        font-weight: 400;
+        color: #1B1A17;
+        text-align: center;
+    }
+
+    &__link-position {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__link {
+        display: inline-flex;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #C4C0B6;
+        font-size: 16px;
+        font-weight: 500;
+        color: #444240;
+    }
+
+    &__sections {
+        width: 100%;
+        @extend %df-basic;
+        margin-top: 65px;
+    }
+
+    &__section {
+        width: 30%;
+    }
+
+    &__watches-name {
+        font-size: 14px;
+        font-family: 'Playfair Display', sans-serif;
+        font-weight: bold;
+        color: #1b1a17d1;
+        margin-bottom: 10px;
+    }
+
+    &__watches-prices {
+        font-size: 12px;
+        font-family: 'Prata', serif;
+        color: #1b1a17d1;
+    }
+
+    &__watches-photos{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__more-details {
+        font-size: 16px;
+        font-family: 'Playfair Display', sans-serif;
+        color: #1B1A17;
+        position: relative;
+        margin-left: 50px;
+
+        &::before{
+            content: "";
+            width: 30px;
+            height: 1px;
+            background: #8B8371;
+            position: absolute;
+            top: 12px;
+            left: -50px;
+        }
     }
 }
