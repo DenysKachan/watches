@@ -1,0 +1,55 @@
+%df-basic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner {
+    width: 100%;
+    @extend %df-basic;
+
+    &__article {
+        width: 30%;
+        margin-top: 30px;
+        transform: translateX(90px);
+    }
+
+    &__headline {
+        font-size: 44px;
+        font-family: 'Playfair Display', sans-serif;
+        margin-bottom: 40px;
+
+        span {
+            font-size: 30px;
+        }
+    }
+
+    &__text {
+        color: #1b1a17d1;
+        margin-bottom: 65px;
+    }
+
+    &__btn {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 0;
+        background: #444240;
+        color: white;
+        border: 1px solid #444240;
+        transition: .3s;
+
+        &:hover {
+            background: white;
+            color: #444240;
+            border: 1px solid #444240;
+        }
+    }
+
+    &__photo {
+        width: 65%;
+        margin-top: 30px;
+        user-select: none;
+    }
+}

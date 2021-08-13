@@ -1,0 +1,119 @@
+.header__body, .header__menu, .header__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.header__body {
+  width: 100%;
+  padding-top: 15px;
+}
+
+.header__logo {
+  width: 105px;
+}
+
+.header__logo img {
+  width: 100%;
+}
+
+.header__menu {
+  width: 35%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.header__menu-link {
+  color: #555248;
+  text-transform: capitalize;
+}
+
+.header__menu-link:hover {
+  text-decoration: underline;
+}
+
+.header__search-box {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  padding: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header__search-box:hover {
+  background: #555248;
+}
+
+.header__search-box:hover .header__search-txt {
+  width: 100px;
+  background: #555248;
+  color: white;
+}
+
+.header__search-box:hover .header__search-btn {
+  background: white;
+}
+
+.header__search-btn {
+  padding: 5px;
+  border-radius: 100px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header__search-btn img {
+  width: 16px;
+}
+
+.header__search-txt {
+  width: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: white;
+}
+
+.header__shopping-cart {
+  width: 18px;
+  margin-left: 20px;
+}
+
+.header__heart {
+  width: 19px;
+  margin-left: 10px;
+}
+
+.main {
+  width: 100%;
+}
