@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>CONQUEST</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="shortcut icon" href="img/title_logo.svg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap"
         rel="stylesheet">
@@ -20,9 +21,13 @@
 <body>
 
     <div class="wrapper">
+
         <header class="header">
             <div class="container">
                 <div class="header__body">
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
                     <a href="#" class="header__logo"><img src="img/header_logo.svg" alt="logo"></a>
                     <nav class="header__menu">
                         <a href="#" class="header__menu-link">каталог</a>
@@ -143,13 +148,8 @@
                                 </a>
                             </nav>
                         </article>
-                        <div class="networks-ad__gallery">
-                            <div>
-                                <img src="img/networks_ad_1.png" alt="photo">
-                                <img src="img/networks_ad_2.png" alt="photo">
-                            </div>
-                            <img src="img/networks_ad_3.png" alt="photo">
-                        </div>
+                        <img src="img/networks-ad_gallery.png" alt="gallery"
+                            class="networks-ad__gallery">
                     </div>
                 </div>
             </div>
@@ -160,7 +160,9 @@
             <div class="container">
                 <div class="footer__body">
                     <section>
-                        <a href="#"><img src="img/footer_logo.svg" alt="logo" class="footer__logo"></a>
+                        <a href="#">
+                            <img src="img/footer_logo.svg" alt="logo" class="footer__logo">
+                        </a>
                         <a href="#" class="footer__link">3 (809) 750-47-97</a>
                         <a href="#" class="footer__link">info@conquest.watch.ru</a>
                     </section>
@@ -172,14 +174,14 @@
                         <a href="#" class="footer__link">Відгуки</a>
                     </section>
                     <section>
-                        <h5>про компанію</h5>
+                        <h5>покупцям</h5>
                         <a href="#" class="footer__link">Каталог товарів</a>
                         <a href="#" class="footer__link">Як замовити?</a>
                         <a href="#" class="footer__link">FAQ</a>
                         <a href="#" class="footer__link">Корпоративним клієнтам</a>
                     </section>
                     <section>
-                        <h5>про компанію</h5>
+                        <h5>оплата та доставках</h5>
                         <a href="#" class="footer__link">Способи оплати</a>
                         <a href="#" class="footer__link">Час доставки</a>
                         <a href="#" class="footer__link">Гарантії та ремонт</a>
@@ -188,7 +190,10 @@
                 </div>
             </div>
         </footer>
+
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
